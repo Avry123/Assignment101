@@ -1,0 +1,534 @@
+.full_body {
+    width: 100vw;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  /* Nav Top */
+  
+  .nav_top {
+    width: 90vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .nav_top_1 {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .cart {
+    padding: 0px 0.5em 0px 0.5em;
+    border-left : 1px solid black;
+     border-right : 1px solid black;
+  }
+  
+  /* Nav Top */
+  
+  /* Nav Bottom */
+  
+  .nav_bottom , .nav_bottom_1 , .nav_bottom_2 {
+    display: flex;
+  }
+  
+  .nav_bottom {
+    width: 90vw;
+    gap: 1em;
+    justify-content: center;
+  }
+  
+  .nav_bottom_1 , .nav_bottom_2 {
+  gap: 1em;
+  }
+  
+  .nav_bottom_p {
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .nav_bottom_p::before {
+    content: ' ';
+    width: 0px;
+    height: 5px;
+    position: absolute;
+    top: -10px;
+    transition: all ease-in-out 250ms;
+    background: black;
+  }
+
+  .nav_bottom_p:hover::before {
+    width: 100%;
+  }
+
+  .nav_top_1_p {
+    position: relative;
+  }
+
+  .nav_top_1_p::before {
+    content: ' ';
+    height: 5px;
+    width: 0px;
+    position: absolute;
+    top: -10px;
+    transition: all ease-in-out 250ms;
+    background: black;
+  }
+
+  .nav_top_1_p:hover::before {
+    width: 100%;
+  }
+  
+  /* .nav_top_1_p:hover {
+    color: gray;
+  } */
+  
+  /* .nav_bottom_p:hover {
+    color: gray;
+  } */
+  
+  @media only screen and (min-width: 600px) {
+    .nav_bottom {
+      justify-content: space-between;
+      padding: 1em;
+    }
+    
+  }
+  
+  /* Nav  Bottom */
+  
+  .exploreDiscover {
+    text-align: center;
+  }
+  
+  /* Search */
+  .search {
+    width: 400px;
+    height: 30px;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  
+  .search_bar {
+    width: 100%;
+    border:0px;
+     border-radius: 10px;
+  }
+  
+  .search_bar:focus {
+    outline:none;
+  }
+  
+  .search_icon {
+    width: 20px;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .search {
+      width: 200px;
+    }
+  }
+  
+  /* Search */
+  
+  /* <!--   Button to Change --> */
+  .buttonChange {
+    width: 100vw;
+    min-height: 40px;
+  
+  }
+  
+  .childbc_1 {
+  display: flex;
+    gap: 0.2em;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .child_1_button {
+    padding:0px;
+    border: 0px;
+    cursor: pointer;
+    background:none;
+  }
+  
+  #childbc_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
+  
+  .child_2_buttonChange {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .child_2_buttonChange::before {
+  content: ' ';
+  display: block;
+  height: 5px;
+  width: 0%;
+  position: absolute;
+  top:20px;
+  transition: all ease-in-out 250ms;
+  background: black;
+  }
+  
+  .child_2_buttonChange:hover::before {
+    width: 100%;
+   
+  }
+  
+  .plus {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  /* <!--   Button to Change --> */
+  
+  /* Card Top */
+  .card_both {
+    max-width: 650px;
+  }
+  
+  .spotlight {
+    padding: 1em;
+  }
+  
+  .card {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    gap: 1em;
+  }
+  
+  .cardb_p {
+    margin:0px;
+  }
+  
+  .descp {
+    font-size: 0.7em;
+     line-height: 1.6;
+  }
+  
+  .card_info {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+  }
+  
+  .card_img {
+    max-width: 250px;
+    height:180px;
+  }
+  
+  .card_button {
+    width: 100px;
+    background: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .card_button:hover {
+    background: black;
+    color: white;
+    font-weight: bold;
+  }
+  
+  @media only screen and (min-width: 420px) {
+    .card {
+      max-width: 650px;
+      flex-direction: row;
+    }
+    
+    .card_button {
+      margin-left:0px;
+    }
+  }
+  /* Card Top */
+  
+  /* Button Top */
+  
+  .button_top {
+    max-width: 450px;
+    height: 50px;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-top: 2em;
+    border: 0px;
+    background: #FF9551;
+  }
+  
+  @media only screen and (max-width: 600px) {
+   .button_top {
+      font-size: 1em;
+    }
+  }
+  
+  /* Button Top */
+  
+  /* Carousel Top */
+  
+  .carouseltop {
+    max-width: 750px;
+    min-height: 250px;
+    margin-top: 2em;
+  }
+  
+  .carouselt_1 {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  
+  .carouselt_1_img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .carouselt_p {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  
+  @media only screen and (max-width: 650px) {
+    
+    .carouselt_p {
+      text-align: center;
+    }
+    
+    .carouselt_1 {
+      justify-content: center;
+    }
+  }
+  
+  /* Carousel Top */
+  
+  /* Science Section */
+  
+  .science_section {
+    width: 100vw;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 1em 0px 1em;
+    margin-top: 3em;
+    background: #8FBDD3;
+  }
+  
+  .science_section_p {
+    font-size: 2em;
+     padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .science_section_p {
+      font-size: 1em;
+    }
+  }
+  
+  /* Science Section */
+  
+  
+  /* Button Bottom */
+  
+  .button_top {
+    max-width: 450px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    margin-top: 2em;
+    border: 0px;
+    background: #FF9551;
+  }
+  
+  @media only screen and (max-width: 600px) {
+   .button_top {
+      font-size: 1em;
+    }
+  }
+  
+  /* Button Bottom */
+  
+  /* Carousel Bottom */
+  .carousel_bottom {
+    max-width: 750px;
+    min-height: 250px;
+    margin-top: 2em;
+  }
+  
+  .carouselb_p  {
+    font-weight: bold;
+     font-size: 1.2em;
+  }
+  
+  
+  .carouselb_1 {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+  
+  .carouselb_1_img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  
+  @media only screen and (max-width: 650px) {
+    
+    .carouselb_p {
+      text-align: center;
+    }
+    
+    .carouselb_1 {
+      justify-content: center;
+    }
+  }
+  /* Carousel Bottom */
+  
+  /* Donate Button */
+  
+  .donate {
+    width: 100vw;
+    min-height: 100px;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+  }
+  
+  .donate_p {
+    font-size: 2em;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  .donate_button {
+    width: 80px;
+    background: none;
+  }
+  
+  .donate_button:hover {
+    background: black;
+    color: white;
+    font-weight: bold;
+  }
+  
+  
+  
+  /* Donate Button */
+  
+  /* Contact Way */
+  
+  .parent {
+    width: 80vw;
+    min-height: 350px;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  .child_2 , .child_3 , .child_5 {
+    
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .child_1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .child_3 {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .child_4 {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+  }
+  
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .child_2_p:hover , .child_3_p:hover, .child_5_p:hover {
+    color: gray;
+  }
+  
+  
+  
+  
+  @media only screen and (max-width: 600px) { 
+    
+    .parent {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .child_1  {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      order: 1;
+    }
+    
+    .child_5 {
+      order: 2;
+    }
+    
+    .child_3 {
+      order: 3;
+    }
+    
+   
+    
+  }
+  
+  /* Contact Way */
+  
+  
