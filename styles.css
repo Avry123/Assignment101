@@ -23,10 +23,20 @@
   cursor: pointer;
   color: white;
   display: flex;
+  gap: 0.5em;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
 /*   background:red; */
+}
+
+.logo_div {
+  display: flex;
+  gap: 0.5em;
+}
+
+.logo_1 {
+  width: 50px;
 }
 
 .logo {
@@ -54,7 +64,11 @@
    border-right : 1px solid black;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 550px) {
+  
+  .logo_1 {
+  width: 30px;
+}
   
   .logo {
     width: 120px;
@@ -145,6 +159,7 @@ gap: 1em;
   font-weight: bold;
   text-align: center;
 }
+
 
 /* Search */
 
@@ -440,60 +455,24 @@ display: flex;
 /* Button Bottom */
 
 /* Carousel Bottom */
-.carousel_bottom {
-  max-width: 750px;
+
+/* Carousel Bottom */
+
+.carouselbottom {
+  max-width: 900px;
   min-height: 250px;
   margin-top: 2em;
 }
 
-.carouselb_p  {
-  font-weight: bold;
-   font-size: 1.2em;
+.carouselb_2_img {
+  width: 250px;
 }
 
-
-.carouselb_1 {
-  display: flex;
-  gap: 1em;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-}
-
-.carouselb_1_imgdiv , .carouselb_2_imgdiv, .carouselb_3_imgdiv {
-  width: 150px;
-  height: 100px;
-   background-image: url('https://www.annualreviews.org/pb-assets/assets/newsupdates/images/peld-prize-2022-news-update-1663692920240.png');
-background-size: contain;
-  background-repeat: no-repeat;
-  border:0px solid whitesmoke;
-  transition: all ease-in-out 250ms;
-}
-
-.carouselb_1_imgdiv:hover, .carouselb_2_imgdiv:hover, .carouselb_3_imgdiv:hover {
-  border: 5px solid whitesmoke;
-}
-
-.carouselb_2_imgdiv {
- background-image: url('https://www.annualreviews.org/pb-assets/assets/newsupdates/images/global-health-issues-2022-385x215-1662595296340.png');
-}
-
-.carouselb_3_imgdiv {
-  background-image: url('https://www.annualreviews.org/pb-assets/assets/newsupdates/images/event-19-2022-news-update-385x215-1662578056037.png');
-}
-
-
-@media only screen and (max-width: 650px) {
-  
-  .carouselb_p {
-    text-align: center;
-  }
-  
-  .carouselb_1 {
-    justify-content: center;
+@media only screen and (min-width: 720px) {
+  .carouselb_2_img {
+    width: 220px;
   }
 }
-/* Carousel Bottom */
-
 /* Donate Button */
 
 .donate {
