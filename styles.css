@@ -270,6 +270,7 @@ display: flex;
   
   .spotlight {
     font-size: 2em;
+    font-weight: bold;
     text-align: center;
     margin: 2em 0px 2em 0px;
   }
@@ -419,6 +420,7 @@ display: flex;
   font-weight: bold;
   font-size: 2em;
   text-align: center;
+  margin: 2em 0px 2em 0px;
 }
 
 
@@ -444,7 +446,7 @@ display: flex;
   align-items: center;
   padding: 0px 1em 0px 1em;
   margin-top: 3em;
-  background: #8FBDD3;
+  background: #2f5e83;
 }
 
 .science_section_p {
@@ -542,9 +544,9 @@ display: flex;
 }
 
 .donate_p {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
-  margin: 0px;
+  margin: 2em 0px 0.5em 0px;
 }
 
 .donate_button {
@@ -558,7 +560,11 @@ display: flex;
   font-weight: bold;
 }
 
-
+@media only screen and (max-width: 500px) {
+  .donate_p {
+    font-size: 2em;
+  }
+}
 
 /* Donate Button */
 
