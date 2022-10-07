@@ -288,17 +288,42 @@ display: flex;
   }
   
   .card_both {
-    background: red;
+/*     background: red; */
     margin: 2em 0px 2em 0px;
   }
   
   .spotlight {
     /* color: white; */
-    background: red;
+/*     background: red; */
     font-size: 2em;
     font-weight: bold;
     text-align: center;
     margin: 1em 0px 1.5em 0px;
+    position: relative;
+  }
+  
+  .spotlight_hidden_logo {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+   position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);                           
+/*     background: blue; */
+  }
+  
+  .spotlight_hidden_logo_l {
+    width: 50%;
+    height: 100%;
+    display: flex;
+/*     background: green; */
+  }
+  
+  .spotlight_logo_l {
+    width: 50px;
+    object-fit: contain;
+    margin-left: 1em;
   }
   
   .card {
@@ -389,7 +414,10 @@ display: flex;
     font-size: 1em;
   }
   
+  
 }
+
+
 /* Card Top */
 
 /* Button Top */
@@ -480,7 +508,7 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 1em 0px 1em;
+  /* padding: 0px 1em 0px 1em; */
   /* margin-top: 3em; */
   background: #2f5e83;
 }
