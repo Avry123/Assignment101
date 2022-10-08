@@ -335,6 +335,7 @@ display: flex;
   
   .card_img {
     width: 450px;
+    border: 8px solid white;
   }
   
   .cardb_p {
