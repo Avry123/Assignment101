@@ -8,6 +8,10 @@
   justify-content: space-around;
 }
 
+.full_strip {
+  width: 100vw;
+}
+
 /* Nav Top */
 
 .dark_black {
@@ -23,10 +27,20 @@
   cursor: pointer;
   color: white;
   display: flex;
+  gap: 0.5em;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
 /*   background:red; */
+}
+
+.logo_div {
+  display: flex;
+  gap: 0.5em;
+}
+
+.logo_1 {
+  width: 50px;
 }
 
 .logo {
@@ -54,7 +68,11 @@
    border-right : 1px solid black;
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 550px) {
+  
+  .logo_1 {
+  width: 30px;
+}
   
   .logo {
     width: 120px;
@@ -146,17 +164,28 @@ gap: 1em;
   text-align: center;
 }
 
+
 /* Search */
 
-.peacock {
+.peacock_true {
+  width: 100vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://i.postimg.cc/TPqFHJRt/banner-home.jpg');
+  background-size: cover;
+}
+
+.peacock_not {
   width: 100vw;
   height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('https://cdn.pixabay.com/photo/2019/09/26/05/39/peacock-feather-4505147_1280.jpg');
-  background-size: cover;
+  
 }
 
 .search {
@@ -247,67 +276,149 @@ display: flex;
 /* <!--   Button to Change --> */
 
 /* Card Top */
-.card_both {
-  max-width: 650px;
-}
+@media only screen and (max-width: 1500px) {
 
-.spotlight {
-  padding: 1em;
-}
-
-.card {
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 1em;
-  gap: 1em;
-}
-
-.cardb_p {
-  margin:0px;
-}
-
-.descp {
-  font-size: 0.7em;
-   line-height: 1.6;
-}
-
-.card_info {
-  display: flex;
-  gap: 1em;
-  flex-direction: column;
-  justify-content: flex-start;
+  .after_peacock {
+    background: #628E90;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+  }
   
-}
+  .card_both {
+/*     background: red; */
+    margin: 2em 0px 2em 0px;
+  }
+  
+  .spotlight {
+    /* color: white; */
+/*     background: red; */
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 0px 1.5em 0px;
+    position: relative;
+  }
+  
+  .spotlight_hidden_logo {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+   position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);                           
+/*     background: blue; */
+  }
+  
+  .spotlight_hidden_logo_l {
+    width: 50%;
+    height: 100%;
+    display: flex;
+/*     background: green; */
+  }
+  
+  .spotlight_logo_l {
+    width: 50px;
+    object-fit: contain;
+    margin-left: 1em;
+  }
+  
+  .card {
+/*     background: red; */
+    max-width: 900px;
+    display: flex;
+    gap: 1em;
+  }
+  
+  .card_img {
+    width: 450px;
+    border: 8px solid white;
+  }
+  
+  .cardb_p {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 
-.card_img {
-  max-width: 250px;
-  height:180px;
-}
+  .blue_dash {
+    margin:0px;
+    border-bottom: solid 4px blue;
+  }
+  
+  .descp {
+    font-size: 1.5em;
+    line-height: 140%;
+  }
 
-.card_button {
-  width: 100px;
-  background: none;
+  
+  .card_button {
+    padding: 0.5em 1em 0.5em 1em;
+   background: none;
   margin-right: auto;
   margin-left: auto;
-}
-
-.card_button:hover {
+  }
+  
+  .card_button:hover {
   background: black;
   color: white;
   font-weight: bold;
 }
+  
+}
 
-@media only screen and (min-width: 420px) {
+@media only screen and (max-width: 920px) {
+  
   .card {
-    max-width: 650px;
-    flex-direction: row;
+    max-width: 760px;
   }
   
-  .card_button {
-    margin-left:0px;
+  .card_img {
+    width: 350px;
   }
+  
+  .cardb_p {
+    font-size: 1.5em;
+  }
+  
+  .descp {
+    font-size: 0.8em;
+  }
+  
+} 
+
+@media only screen and (max-width: 850px) {
+  
+  .card {
+    max-width: 350px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card_img {
+    width: 300px;
+  }
+  
+  .card_p {
+    font-size: 2em;
+  }
+  
+  .card_info {
+    text-align: center;
+  }
+  
+  .descp {
+    font-size: 1em;
+  }
+  
+  
 }
+
+
 /* Card Top */
 
 /* Button Top */
@@ -338,15 +449,19 @@ display: flex;
 /* Carousel Top */
 
 .carouseltop {
-  max-width: 750px;
+  max-width: 100vw;
   min-height: 250px;
   margin-top: 2em;
+  /* background: red; */
 }
 
 .carouselt_1 {
   display: flex;
   gap: 1em;
-  justify-content: space-between;
+  margin-bottom: 4em;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: center;
   flex-wrap: wrap;
   
 }
@@ -361,27 +476,29 @@ display: flex;
 }
 
 .carouselt_1_img {
-  width: 150px;
-  height: 150px;
+  width: 350px;
+ object-fit: contain;
 }
 
 .carouselt_p {
+  color: white;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2em;
+  text-align: center;
+  margin: 2em 0px 2em 0px;
 }
 
 
-@media only screen and (max-width: 650px) {
-  
-  .carouselt_p {
-    text-align: center;
-  }
-  
+@media only screen and (max-width: 850px) {
+   
   .carouselt_1 {
     justify-content: center;
   }
-}
 
+  .carouselt_1_img {
+    max-width: 300px;
+  }
+}
 /* Carousel Top */
 
 /* Science Section */
@@ -392,15 +509,15 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px 1em 0px 1em;
-  margin-top: 3em;
-  background: #8FBDD3;
+  /* padding: 0px 1em 0px 1em; */
+  /* margin-top: 3em; */
+  background: #2f5e83;
 }
 
 .science_section_p {
   font-size: 2em;
-   padding-left: 0.5em;
-  padding-right: 0.5em;
+   padding-left: 0.8em;
+  padding-right: 0.8em;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -408,7 +525,7 @@ display: flex;
 
 @media only screen and (max-width: 600px) {
   .science_section_p {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 
@@ -440,66 +557,61 @@ display: flex;
 /* Button Bottom */
 
 /* Carousel Bottom */
-.carousel_bottom {
-  max-width: 750px;
+
+/* Carousel Bottom */
+
+/* .carouselbottom {
+  max-width: 900px;
   min-height: 250px;
   margin-top: 2em;
-}
+} */
 
-.carouselb_p  {
-  font-weight: bold;
-   font-size: 1.2em;
-}
+/* .carouselb_2_img {
+  width: 300px;
+} */
 
+@media only screen and (max-width: 1500px) {
+  .carouselb_2_img {
+    width: 300px;
+    /* object-fit: contain; */
+  }
 
-.carouselb_1 {
-  display: flex;
-  gap: 1em;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-}
-
-.carouselb_1_imgdiv , .carouselb_2_imgdiv, .carouselb_3_imgdiv {
-  width: 150px;
-  height: 100px;
-   background-image: url('https://www.annualreviews.org/pb-assets/assets/newsupdates/images/peld-prize-2022-news-update-1663692920240.png');
-background-size: contain;
-  background-repeat: no-repeat;
-  border:0px solid whitesmoke;
-  transition: all ease-in-out 250ms;
-}
-
-.carouselb_1_imgdiv:hover, .carouselb_2_imgdiv:hover, .carouselb_3_imgdiv:hover {
-  border: 5px solid whitesmoke;
-}
-
-.carouselb_2_imgdiv {
- background-image: url('https://www.annualreviews.org/pb-assets/assets/newsupdates/images/global-health-issues-2022-385x215-1662595296340.png');
-}
-
-.carouselb_3_imgdiv {
-  background-image: url('https://www.annualreviews.org/pb-assets/assets/newsupdates/images/event-19-2022-news-update-385x215-1662578056037.png');
+  .carouselb_2_img_3 {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+  }
 }
 
 
-@media only screen and (max-width: 650px) {
-  
+
+@media only screen and (min-width: 700px) {
   .carouselb_p {
     text-align: center;
   }
-  
-  .carouselb_1 {
-    justify-content: center;
+
+  .carouselb_2_img {
+    height: 150px;
+    width: 350px;
+    /* object-fit: contain; */
   }
 }
-/* Carousel Bottom */
 
+@media only screen and (min-width: 850px) {
+
+  .carouselbottom {
+    max-width: 100vw;
+    /* background: red; */
+  }
+
+  
+}
 /* Donate Button */
 
 .donate {
   width: 100vw;
   min-height: 100px;
-  margin-top: 2em;
+  /* background: blue; */
   margin-bottom: 2em;
   display: flex;
   justify-content: center;
@@ -509,9 +621,9 @@ background-size: contain;
 }
 
 .donate_p {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
-  margin: 0px;
+  margin: 2em 0px 0.5em 0px;
 }
 
 .donate_button {
@@ -525,7 +637,11 @@ background-size: contain;
   font-weight: bold;
 }
 
-
+@media only screen and (max-width: 500px) {
+  .donate_p {
+    font-size: 2em;
+  }
+}
 
 /* Donate Button */
 
