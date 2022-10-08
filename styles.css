@@ -276,7 +276,7 @@ display: flex;
 /* <!--   Button to Change --> */
 
 /* Card Top */
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 2500px) {
 
   .after_peacock {
     background: #628E90;
@@ -570,7 +570,7 @@ display: flex;
   width: 300px;
 } */
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 2500px) {
   .carouselb_2_img {
     width: 300px;
     /* object-fit: contain; */
